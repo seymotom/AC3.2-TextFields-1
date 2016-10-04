@@ -59,9 +59,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print("\n + \(textField.debugId) SHOULD RETURN")
         
-        _ = self.textFieldsAreValid()
+        return textFieldsAreValid()
         
-        return true
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
